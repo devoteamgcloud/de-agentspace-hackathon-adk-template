@@ -23,13 +23,12 @@ class Config(BaseSettings):
 
     agent_settings: AgentSettings = Field(default_factory=AgentSettings)
 
-    # Google Cloud settings, loaded from the .env file using aliases.
-    # Pydantic will look for the 'alias' name in the environment variables.
-    CLOUD_PROJECT: str = Field(alias="GOOGLE_CLOUD_PROJECT")
-    CLOUD_LOCATION: str = Field(alias="GOOGLE_CLOUD_LOCATION")
-
-    # Backend API URL, loaded from the .env file using an alias.
-    API_BASE_URL: str = Field(alias="GOOGLE_API_BASE_URL")
+    CLOUD_LOCATION: str = "us-central1"
+    # Google Cloud settings
+    #TODO: START: Add your details below for Project ID, Location and API_BASE_URL
+    CLOUD_PROJECT: str = "<<Your-Project-ID>>"
+    API_BASE_URL: str = "<<Backend-API-URL>>"
+    #TODO: END: Add your details below
 
     @computed_field
     @property

@@ -51,20 +51,9 @@ cd de-agentspace-hackathon-adk-template
 
 ## 2. Configure the Agent
 
-### 📄 Create a `.env` File
+### 📄 update the adk-agents/sales-assistant-agent/config.py
 
-```bash
-touch .env
-```
-
-### ✏️ Add Environment Variables
-
-```env
-GOOGLE_CLOUD_PROJECT="<<Your project ID>>"
-GOOGLE_CLOUD_LOCATION="us-central1"
-GOOGLE_API_BASE_URL="<<URL of your backend API>>"
-GOOGLE_GENAI_USE_VERTEXAI=1
-```
+Modify the TODO section to update the CLOUD_PROJECT and API_BASE_URL
 
 ---
 
@@ -194,7 +183,6 @@ You can now chat with your agent directly inside **Agentspace**!
 │       ├── crm_client.py # GCP service client functions.
 │       ├── crm_tools.py  # Tool logic (e.g., check availability, create order).
 │       └── schema.py     # API schema definitions.
-├── .env.example          # Example environment file.
 ├── requirements.txt      # Project dependencies.
 └── README.md             # This file.
 ```

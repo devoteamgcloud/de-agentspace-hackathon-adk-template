@@ -1,0 +1,6 @@
+google-cloud-aiplatform[adk,agent_engines]
+requests
+google-adk
+pydantic
+pydantic_settings
+cloudpickle
